@@ -148,6 +148,7 @@ h1 {
 
     .dropbtn {
         visibility: visible;
+        align-items: center;
 
     }
 
