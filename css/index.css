@@ -1,0 +1,120 @@
+body p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    /* background-color: ; */
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+    font-size: large;
+
+}
+
+.logo {
+    text-align: left;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    /* background-color: lightgray; */
+    color: rgb(89, 89, 210);
+    /* background: linear-gradient(to bottom right, rgb(17, 119, 236), rgb(216, 5, 240));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; */
+}
+
+
+button {
+
+    background: linear-gradient(to right, #667eea, #764ba2);
+    border: none;
+    color: white;
+    /* color:transparent; */
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #764ba2, #667eea);
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+    background: linear-gradient(to bottom right, rgb(17, 119, 236), rgb(216, 5, 240));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.group1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem 10px;
+    margin: 10px 20px;
+    max-width: 40%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.stats {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 84%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.numbers {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    justify-content: space-around;
+}
+
+.feed {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem 10px;
+    margin: 10px 20px;
+    /* max-width: 40%; */
+    margin: auto;
+    margin-top: 10px;
+    width: 84%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to bottom right, rgb(17, 119, 236), rgb(216, 5, 240));
+}
