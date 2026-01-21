@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A</title>
+    <link rel="stylesheet" href="connection_app/src/css/Q&A.css">
+
+</head>
+
+<body>
+
+    <section class="add-form">
+        <h2>Add a Question</h2>
+        <form id="qa-form">
+            <label for="question">Question</label><br>
+            <input type="text" id="question" name="question" required placeholder="Type your question" /><br>
+
+            <label for="category">Category</label><br>
+            <select id="category" name="category">
+                <option value="Computer Science">Computer Science</option>
+                <option value="Business">Business</option>
+                <option value="Science">Science</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+            <button type="submit">Add Q&A</button>
+        </form>
+    </section>
+
+    <input type="text" id="myInput" placeholder="Search questions or answers...">
+
+    <div id="qa-container">
+        <!-- Categories and Q&A items will be rendered here by JS -->
+    </div>
+
+    <script src="connection_app/src/js/Q&A.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,217 @@
+/* 1. Global Typography & Reset */
+html, body {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto; /* ensure vertical scrolling is available */
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f8f9fa; /* Light background to make cards pop */
+    color: #333;
+    padding: 2rem 1rem 4rem 1rem; /* extra bottom padding so fixed/absolute elements don't cover content */
+    max-width: 800px; /* Keep the content centered and readable */
+    margin: 0 auto;
+}
+
+/* 2. Gradient Headings */
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    background: linear-gradient(to bottom right, rgb(17, 119, 236), rgb(216, 5, 240));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+/* 3. Inputs & Forms */
+/* Styling the Search Bar like a 'Pill' */
+#myInput {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 30px; /* Rounded pill shape */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+#myInput:focus {
+    box-shadow: 0 4px 10px rgba(118, 75, 162, 0.2);
+    border-color: #764ba2;
+}
+
+/* Standard inputs for the Add Form */
+input[type="text"], 
+textarea, 
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: inherit;
+    resize: vertical;
+}
+
+/* 4. Buttons (Gradient Style) */
+button {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(to right, #764ba2, #667eea);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific styling for Delete buttons (Make them red but keep the style) */
+.delete-btn, .delete-reply-btn {
+    background: linear-gradient(to right, #f8f5f5, #f3ecec);
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 8px 15px;
+    font-size: 12px;
+    color: #000;
+}
+
+.delete-btn:hover, .delete-reply-btn:hover {
+    background: linear-gradient(to right, #ee5555, #ff6b6b);
+}
+
+/* 5. Cards (The Main Containers) */
+/* This matches the .card style from your snippet */
+.add-form, .qa-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Softer corners */
+    padding: 1.5rem;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    position: relative; /* For absolute positioning of delete buttons */
+}
+
+.qa-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 6. Question & Answer Specifics */
+.category-section h3 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.qa-list {
+    list-style: none;
+    padding: 0;
+}
+
+.qa-item .question {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    padding-right: 80px; /* Space for the delete button */
+}
+
+/* Replies Area */
+.replies-container {
+    margin-top: 15px;
+    padding-left: 10px;
+    border-left: 3px solid #667eea; /* Uses the blue from your gradient */
+}
+
+.reply {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    position: relative;
+    padding-right: 90px; /* Space for reply delete button */
+}
+
+.no-replies {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Reply Form */
+.reply-form {
+    margin-top: 15px;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 600px) {
+    
+    /* 1. Maximize screen real estate */
+    body {
+        padding: 10px; /* Reduce outer padding */
+    }
+
+    /* 2. Make Cards more compact */
+    .add-form, .qa-item {
+        padding: 1rem; /* Less internal padding */
+        margin-bottom: 15px;
+    }
+
+    /* 3. Make Inputs and Main Buttons easier to tap */
+    input[type="text"], 
+    textarea, 
+    select,
+    #myInput {
+        font-size: 16px; /* Prevents zooming on iPhones */
+        padding: 12px;   /* Larger touch target */
+    }
+
+  
+    .add-form button, 
+    .reply-form button {
+        width: 100%;
+        margin-top: 10px;
+        display: block;
+    }
+
+   
+    .delete-btn {
+        position: static; 
+        display: block;
+        width: 100%;
+        margin-top: 15px;
+        text-align: center;
+        background: #e92020;
+    color: #f1e8e8;
+    }
+        
+
+    .qa-item .question {
+        padding-right: 0;
+    }
+
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+}
