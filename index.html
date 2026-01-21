@@ -13,27 +13,32 @@
 
 
 <body>
-    <nav>
-        <div class="nav-links">
-            <div class="logo">
-                <i data-lucide="message-circle"></i>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <div class="logo-wrapper">
+                <i data-lucide="message-circle" class="logo"></i>
             </div>
-
-            <div>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href=""> <i data-lucide="book-open"></i> Home</a>
-                    <a href=""> <i data-lucide="message-circle"></i> Feed</a>
-                    <a href=""> <i data-lucide="users"></i> Groups</a>
-                    <a href=""> <i data-lucide="help-circle"></i> Q&A </a>
-                </div>
-                <button class="dropbtn" onclick="myFunction()">Dropdown
-                    <i class="fa fa-caret-down"></i>
-                </button>
-            </div>
-
-
+            <span class="brand-name">Connection</span>
         </div>
-
+        <div class="navbar-menu">
+            <a href="index.html" class="nav-item active">
+                <i data-lucide="book-open"></i>
+                <span>Home</span>
+            </a>
+            <a href="feed.html" class="nav-item">
+                <i data-lucide="message-circle"></i>
+                <span>Feed</span>
+            </a>
+            <a href="groups.html" class="nav-item">
+                <i data-lucide="users"></i>
+                <span>Groups</span>
+            </a>
+            <a href="Q&A.html" class="nav-item">
+                <i data-lucide="help-circle"></i>
+                <span>Q&A</span>
+            </a>
+        </div>
     </nav>
 
     <main>
