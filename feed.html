@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="CSS/feed.css">
+    <title>Connection - Feed</title>
+</head>
+<body>
+<!-- NAVIGATION BAR -->
+<nav class="navbar">
+    <div class="navbar-brand">
+        <div class="logo-wrapper">
+            <i data-lucide="message-circle" class="logo"></i>
+        </div>
+        <span class="brand-name">Connection</span>
+    </div>
+    
+    <div class="navbar-menu">
+        <a href="#" class="nav-item">
+            <i data-lucide="book-open"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="nav-item active">
+            <i data-lucide="message-circle"></i>
+            <span>Feed</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i data-lucide="users"></i>
+            <span>Groups</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i data-lucide="help-circle"></i>
+            <span>Q&A</span>
+        </a>
+    </div>
+</nav>
+<!-- END OF NAV -->
+
+<!-- MAIN CONTAINER -->
+<main class="container">
+    
+    <!-- POST CREATION CARD -->
+    <div class="post-create-card">
+        <textarea id="post-input" placeholder="Share your thoughts and experiences with the community..."></textarea>
+        <div class="post-create-actions">
+            <button id="post-btn" class="btn-post">
+                <i data-lucide="send"></i>
+                <span>Post</span>
+            </button>
+        </div>
+    </div>
+    <!-- END OF POST CREATION CARD -->
+
+    <!-- FEED SECTION -->
+    <div id="feed">
+        <!-- Posts will be dynamically added here by JavaScript -->
+    </div>
+    <!-- END OF FEED SECTION -->
+    
+</main>
+<!-- END OF MAIN -->
+
+
+
+<script src="JS/feed.js"></script>
+<script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+</script>
+</body>
+</html>
