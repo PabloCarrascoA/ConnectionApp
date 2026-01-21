@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROUP 7 - Connection</title>
+    <link rel="stylesheet" href="groups.css">
+</head>
+<body>
+    <header>
+        <h1> Study Groups</h1>
+        <p>Join groups to collaborate on projects and learn together</p>
+        <button id="createGroupBtn">+ Create Group</button>
+    </header>
+
+    <div id="createGroupModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create New Group</h2>
+                <button class="close-btn" id="closeBtn">&times;</button>
+            </div>
+            <form class="modal-form" id="createGroupForm">
+                <div class="form-group">
+                    <label for="groupName">Group Name:</label>
+                    <input type="text" id="groupName" placeholder="Enter group name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="groupCategory">Category:</label>
+                    <select id="groupCategory" required>
+                        <option value="">Select a category</option>
+                        <option value="technology">Technology</option>
+                        <option value="business">Business</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="psychology">Psychology</option>
+                        <option value="arts">Arts</option>
+                        <option value="sports">Sports</option>
+                        <option value="science">Science</option>
+                        <option value="engineering">Engineering</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="groupDescription">Description:</label>
+                    <textarea id="groupDescription" placeholder="Describe your group..." rows="4"></textarea>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="groupPrivate">
+                    <label for="groupPrivate">Make this group private</label>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn-cancel" id="cancelBtn">Cancel</button>
+                    <button type="button" class="btn-create">Create Group</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <section class="group-list">
+            <article class="group-card">
+                <h2>Business Plan Competition Teams</h2>
+                <p class="expertise">Area: Business</p>
+                <p class="description">Collaborating on a startup idea for the university competition.</p>
+                <h3>Related Topics:</h3>
+                <ul class="topics">
+                    <li>Entrepreneurship</li>
+                    <li>Startup</li>
+                    <li>Competition</li>
+                </ul>
+                <p class="member-number">  47 members</p>
+                <button class="join-btn">Join</button>
+            </article>
+
+            <article class="group-card">
+                <h2>AI & Machine Learning Hub</h2>
+                <p class="expertise">Area: Artificial Intelligence & Data Science</p>
+                <p class="description">Weekly sessions discussing ML algorithms, working on projects, and sharing resources, we are looking for researchers and enthusiasts passionate about AI.</p>
+                <h3>Related Topics:</h3>
+                <ul class="topics">
+                    <li>Python</li>
+                    <li>TensorFlow</li>
+                    <li>Deep Learning</li>
+                    <li>Neural Networks</li>
+                </ul>
+                <p class="member-number">  63 members</p>
+                <button class="join-btn">Join</button>
+            </article>
+
+            <article class="group-card">
+                <h2>Mobile App Developers</h2>
+                <p class="expertise">Area: Mobile Development</p>
+                <p class="description">Create amazing mobile applications for iOS and Android. Share knowledge about cross-platform development and mobile best practices.</p>
+                <h3>Related Topics:</h3>
+                <ul class="topics">
+                    <li>Swift</li>
+                    <li>Kotlin</li>
+                    <li>React Native</li>
+                    <li>Mobile UI/UX</li>
+                </ul>
+                <p class="member-number">  84 members</p>
+                <button class="join-btn">Join</button>
+            </article>
+
+            <article class="group-card">
+                <h2>Pre-Med Study Group</h2>
+                <p class="expertise">Area: Medicine</p>
+                <p class="description">Supporting each other through organic chemistry and biology. Study sessions every Sunday.</p>
+                <h3>Related Topics:</h3>
+                <ul class="topics">
+                    <li>Biology</li>
+                    <li>Chemistry</li>
+                    <li>MCAT</li>
+                </ul>
+                <p class="member-number"> 23 members</p>
+                <button class="join-btn">Join</button>
+            </article>
+
+            <article class="group-card">
+                <h2>Psychology Research Collective</h2>
+                <p class="expertise">Area: Psychology</p>
+                <p class="description">Conducting research studies and analyzing data together.</p>
+                <h3>Related Topics:</h3>
+                <ul class="topics">
+                    <li>Research</li>
+                    <li>Neuroscience</li>
+                    <li>Statistics</li>
+                </ul>
+                <p class="member-number">  56 members</p>
+                <button class="join-btn">Join</button>
+            </article>
+
+            <article class="group-card">
+                <h2>Game Development Studio</h2>
+                <p class="expertise">Area: Game Development</p>
+                <p class="description">Create interactive games using game engines and 3D graphics. Share assets, game mechanics, and collaborate on exciting gaming projects.</p>
+                <h3>Related Topics:</h3>
+                <ul class="topics">
+                    <li>Unity</li>
+                    <li>Unreal Engine</li>
+                    <li>Blender</li>
+                    <li>C#</li>
+                    <p class="member-number"> 37 members</p>
+                </ul>
+                <button class="join-btn">Join</button>
+            </article>
+        </section>
+    </main>
+
+    <script src="groups.js"></script>
+</body>
+</html>
