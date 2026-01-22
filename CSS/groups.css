@@ -18,7 +18,8 @@
     background: white;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 25rem;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
@@ -63,6 +64,7 @@
     color: #666;
     padding: 0.5rem 1rem;
     border-radius: 8px;
+    font-size: 1.4rem;
     transition: all 0.3s;
 }
 
